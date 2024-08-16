@@ -9,6 +9,7 @@ import Card4 from './onboardingCard4';
 import util from '../../../backend/admin'
 import utils from '../../../backend/users'
 import Image from 'next/image'
+import Logo from '../../../public/assets/zealthLogo.png'
 import $ from 'jquery';
 import { useEffect, useState } from 'react';
 const Onboarding = () =>{
@@ -84,20 +85,20 @@ const Onboarding = () =>{
     return (
   <Box sx={{display: 'flex', justifyContent:'center', alignItems:'center', backgroundColor:'#e8f2f5', height:'100vh'}}>
     <Card className='card0' sx={{width:'85%', height:'80%', backgroundColor:'purple',display: 'flex',zIndex:3, justifyContent:'flex-start', alignItems:'center',borderRadius:4, boxShadow:'0px 0px 25px 3px rgb(0 0 0 / 25%)'}}>
-        <Card sx={{width:'44%', height:'100%', backgroundColor:'white', borderRadius: 2, padding:6, display:'flex', flexDirection:'column', justifyContent:'center', align:'center', gap:3}}>
+        <Card className='card05' sx={{width:'44%', height:'100%', backgroundColor:'white', borderRadius: 2, padding:6, display:'flex', flexDirection:'column', justifyContent:'center', align:'center', gap:3}}>
            {/* <Image src={Logo} className='onboardingLogo'  alt=''/> */}
             {/* <Box sx={{display:'flex', flexDirection:'column', height:'100%', justifyContent:'center', align:'center', gap:3}}> */}
-            <Typography variant='h3' component='h3'>Welcome to Zealthy's onboarding!</Typography>
-            <Typography variant='h5' sx={{color:'grey', fontSize:18}} component='p'>
+            <Typography className='title' variant='h3' component='h3'>Welcome to Zealthy's onboarding!</Typography>
+            <Typography className='titlepara' variant='h5' sx={{color:'grey', fontSize:18}} component='p'>
             Please fill out your information in the following slides.
             </Typography>
             <Button onClick={nextSlide} sx={{color:'white', backgroundColor:'#6060e2', width:2/5}}>Let's Get Started</Button>
             <Button onClick={nextSlide1} sx={{color:'white', backgroundColor:'red', width:2/5}}>Resume onboarding</Button>
             
         </Card>
-        <Card sx={{width:'56%', height:'100%', backgroundColor:'purple',display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
-         
-        </Card>
+        <Typography className='logodiv fields' sx={{width:'56%', height:'100%', backgroundColor:'purple',display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
+         <Image src={Logo} className='h-40 w-40 rounded-full' alt='logo'/>
+        </Typography>
 
     </Card>
     <Card1/>

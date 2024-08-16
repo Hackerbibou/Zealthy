@@ -26,10 +26,10 @@ export default function dataView() {
       <h1 className='text-[40px] text-black'>All Users</h1>
     
      
-      <ul className='flex flex-col items-center w-[85%] h-[80%] bg-white rounded-2xl p-8'>
+      <ul className='small flex flex-col items-center w-[85%] h-[80%] bg-white rounded-2xl p-8'>
         <li className='text-[#9db9bc] flex w-[100%] justify-start py-5 gap-4 '>
           <p className='w-[25%]'>Email</p>
-          <p className='w-[40%]'>About me</p>
+          <p className=' w-[40%]'>About me</p>
           <p className='w-[10%]'>Birthday</p>
           <p className='w-[15%]'>Address</p>
         </li>
@@ -48,6 +48,20 @@ export default function dataView() {
         </div>)}
         </ul>
       </ul>
+      <ul className=' smallData hidden flex-col items-center w-[100%] h-[100%] overflow-y-scroll'>
+          {users.length==0?<p className='text-black h-[100%] w-[100%] flex justify-center items-center'>No users yet</p>:users.map(elem=>
+          <div className='w-[100%]'>
+            <li className='text-[#9db9bc] flex flex-col w-[100%] justify-start  py-5 gap-4'>
+
+          <p className='w-[100%]'><strong className='underline text-[#09092a]' >Email:</strong> {elem.email}</p>
+          <p className='w-[100%] '><strong className='underline text-[#09092a]'>About:</strong> {elem.about_me}</p>
+          <p className='w-[100%]'><strong className='underline text-[#09092a]'>Birthday:</strong> {elem.birthday}</p>
+          <p className='w-[100%]'><strong className='underline text-[#09092a]'>Address:</strong> {elem.street_address} {elem.city}, {elem.state} {elem.zip}
+            </p>
+        </li>
+        <hr className='w-[100%] h-1 bg-[#a6bac0] '/>
+        </div>)}
+        </ul>
     </div>
   )
 }

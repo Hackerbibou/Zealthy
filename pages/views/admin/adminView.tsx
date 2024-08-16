@@ -26,7 +26,7 @@ export default function adminView() {
   return (
     <form onSubmit={handleSubmit} className='bg-[#e8f2f5]  text-black w-screen h-screen flex flex-col items-center justify-center p-10 gap-8' >
       <h1 className='text-[50px] text-black'>Admin Page</h1>
-      <div className='bg-[#e8f2f5] w-screen h-screen flex  items-center justify-center p-10 rounded-2xl'>
+      <div className='admin bg-[#e8f2f5] w-screen h-[60%] flex  items-center justify-center p-10 rounded-2xl'>
       <div className='w-[45%] h-[100%] bg-[white] flex flex-col  items-center'>
         <h1 className='my-20 text-[30px]'>Page 2</h1>
         <ul className='flex flex-col gap-8'>

@@ -5,15 +5,15 @@ const onboardingCard4 = () => {
 
 return (
 <Card className='card4' sx={{width:'85%', height:'80%', backgroundColor:'#dce8ef', justifyContent:'flex-start', alignItems:'center', borderRadius:4, boxShadow:'0px 0px 25px 3px rgb(0 0 0 / 25%)'}}>
-    <Card sx={{width:'44%', height:'100%', backgroundColor:'white', borderRadius: 2, padding:6, display:'flex', flexDirection:'column'}}>
+    <Card className='card05' sx={{width:'44%', height:'100%', backgroundColor:'white', borderRadius: 2, padding:6, display:'flex', flexDirection:'column'}}>
    
         <Typography sx={{display:'flex', flexDirection:'column', height:'100%', justifyContent:'center', align:'center', gap:3}}>
             <Typography variant='h2' sx={{color:'purple'}} component='h2'>
                 04
             </Typography>
-            <Typography variant='h2' component='h2'>You'r All Set!</Typography>
+            <Typography className='title' variant='h2' component='h2'>You'r All Set!</Typography>
             
-            <Typography variant='h5' sx={{color:'grey', fontSize:18}} component='p'>
+            <Typography className='titlepara' variant='h5' sx={{color:'grey', fontSize:18}} component='p'>
          Thank you for onboarding with Zealthy click the button to view other signed up users?
         </Typography>
         
@@ -28,9 +28,9 @@ return (
             <Typography sx={{width: 20, height: 20, border:'2px solid lightgrey',backgroundColor:'#6060e2', borderRadius:'50%'}}></Typography>
         </Typography>
     </Card>
-    <Box sx={{width:'56%', height:'100%', backgroundColor:'inherit', display:'flex', justifyContent:'center', alignItems:'center'}}>
+    <Box className='fields' sx={{width:'56%', height:'100%', backgroundColor:'inherit', display:'flex', justifyContent:'center', alignItems:'center'}}>
     
-    <Box sx={{position:'relative', background:'none'}}>
+    <Box className='inputfields' sx={{position:'relative', background:'none', display:'flex', justifyContent:'center', alignItems:'center'}}>
 
     
         <CheckCircleRoundedIcon

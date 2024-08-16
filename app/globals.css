@@ -270,3 +270,102 @@ html[dir='rtl'] .apexcharts-tooltip .apexcharts-tooltip-marker {
 .card4{
   display: none;
 }
+
+@media screen and (max-width: 800px) {
+ .card0{
+  flex-direction: column;
+  justify-content: center;
+  background-color: #dce8ef;
+  align-items: center;
+  gap: 10;
+  height: 60%;
+ }
+ .card05{
+  width: 80%;
+  height: 40%;
+  padding: 30px;
+ }
+ .logodiv{
+  background-color: inherit;
+ }
+ .title{
+  font-size: 20px;
+  font-weight: 800px;
+ }
+ .titlepara{
+  font-size: 13px;
+ }
+ .card0{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  gap:20px;
+
+ }
+ .card15{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  gap:20px;
+
+ }
+ .card1{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  gap:20px;
+
+ }
+ .card2{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  gap:20px;
+
+ }
+ .card3{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  gap:20px;
+
+ }
+ .card4{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  gap:20px;
+
+ }
+ .fields{
+  width:80%;
+  margin-top: 10px;
+  height: 50%;
+ }
+ .inputfields{
+  padding: 25px;
+  width:95%
+ }
+ .admin{
+  height: 60%;
+ }
+
+}
+@media screen and (max-width: 1200px) 
+{
+  .small{
+    display: none;
+   }
+   .smallData{
+    display: flex;
+    background-color: white;
+    padding:20px;
+    border-radius: 12px;
+   }
+}

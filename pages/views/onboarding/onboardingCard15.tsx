@@ -37,15 +37,15 @@ const onboardingCard15 = () =>{
     }
     return (
     <Card className='card15' sx={{width:'85%', height:'80%', backgroundColor:'#dce8ef', justifyContent:'flex-start', alignItems:'center',borderRadius:4, boxShadow:'0px 0px 25px 3px rgb(0 0 0 / 25%)'}}>
-    <Card sx={{width:'44%', height:'100%', backgroundColor:'white', borderRadius: 2, padding:6, display:'flex', flexDirection:'column'}}>
+    <Card className='card05' sx={{width:'44%', height:'100%', backgroundColor:'white', borderRadius: 2, padding:6, display:'flex', flexDirection:'column'}}>
     {/* <Image src={Logo} className='onboardingLogo'  alt=''/> */}
             <Typography sx={{display:'flex', flexDirection:'column', height:'100%', justifyContent:'center', align:'center', gap:3}}>
             <Typography variant='h2' sx={{color:'purple'}} component='h2'>
                 01
             </Typography>
-            <Typography variant='h2' component='h2'>Login to your account</Typography>
+            <Typography className='title' variant='h2' component='h2'>Login to your account</Typography>
             
-            <Typography variant='h5' sx={{color:'grey', fontSize:18}} component='p'>
+            <Typography className='titlepara' variant='h5' sx={{color:'grey', fontSize:18}} component='p'>
        Resume by entering your email and password
         </Typography>
         <Typography sx={{display:'flex', backgroundColor:'white', justifyContent:'flex-start', alignItems:'center', gap:2}}>
@@ -60,8 +60,8 @@ const onboardingCard15 = () =>{
             <Typography sx={{width: 20, height: 20, border:'2px solid lightgrey',backgroundColor:'inherit', borderRadius:'50%'}}></Typography>
         </Typography>
     </Card>
-    <Box sx={{width:'56%', height:'100%', backgroundColor:'inherit', display:'flex',justifyContent:'center', alignItems:'center'}}>
-    <Box sx={{width:'70%',display:'flex', flexDirection:'column', justifyContent:'center', gap:5}} >
+    <Box className='fields' sx={{width:'56%', height:'100%', backgroundColor:'inherit', display:'flex',justifyContent:'center', alignItems:'center'}}>
+    <Box className='inputfields' sx={{width:'70%',display:'flex', flexDirection:'column', justifyContent:'center', gap:5}} >
           <label>Email </label>
           <Input type='email' onChange={(e)=>handleChange(e,'email')} value={user.email} placeholder='Enter email here'/>
           <label>Password</label> 
