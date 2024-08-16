@@ -26,7 +26,7 @@ return (
             <Typography className='title' variant='h2' component='h2'>You'r All Set!</Typography>
             
             <Typography className='titlepara' variant='h5' sx={{color:'grey', fontSize:18}} component='p'>
-         Thank you for onboarding with Zealthy click the button to view other signed up users?
+         Thank you for onboarding with Zealthy.
         </Typography>
         
         <Button className='btnLink' onClick={handleClick} sx={{color:'white', backgroundColor:'#6060e2', width:'100%'}}>View all users</Button>
