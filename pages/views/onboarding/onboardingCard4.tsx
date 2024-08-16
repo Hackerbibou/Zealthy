@@ -5,14 +5,14 @@ import utils from '../../../backend/users'
 const onboardingCard4 = () => {
 
         function handleClick(e:any){
-            e.preventDefault()
+            e.preventDefault();
 
             (async()=>{
                 await utils.logout()
-            })()
+            })();
             setTimeout(()=>{
                 window.location.href='/data'
-            },100)
+            },100);
 
         }
 return (

@@ -33,7 +33,7 @@ const onboardingCard15 = () =>{
         alert('Error signing in')
     }
     
-        })()
+        })();
     }
     return (
     <Card className='card15' sx={{width:'85%', height:'80%', backgroundColor:'#dce8ef', justifyContent:'flex-start', alignItems:'center',borderRadius:4, boxShadow:'0px 0px 25px 3px rgb(0 0 0 / 25%)'}}>

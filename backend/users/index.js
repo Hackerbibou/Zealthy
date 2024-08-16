@@ -30,9 +30,9 @@ let { data, error } = await supabase.auth.signUp({
   
 }
 async function logout(){
-
+    console.log('reached')
     let { error } = await supabase.auth.signOut()
-
+    console.log(error)
 }
 async function getUser(){
 

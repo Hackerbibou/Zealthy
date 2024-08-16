@@ -89,17 +89,17 @@ const onboardingCard3 = ({userform, setForm, aboutme2, birthday2, adress2}:any) 
     </Card>
     <Box className='fields' sx={{display:'flex', justifyContent:'center', flexDirection:'column', background:'none', alignItems:'center', width:'56%', height:'100%'}}>
     <Box className='inputfields' sx={{backgroundColor:'purple',display:'flex',width:'70%', flexDirection:'column', justifyContent:'center', gap:5}} >
-    {aboutme2 && <div className='w-[100%] flex flex-col justify-center gap-5'>
+    {aboutme2 && <div className='adress w-[100%] flex flex-col justify-center gap-5'>
         <label><h1>About Me: </h1></label>
           <Input type='text' onChange={(e)=>handleChange(e,'aboutme')} value={userform.about_me} placeholder='Tell us about yourself'/>
         </div>}
-      {birthday2 && <div className='w-[100%] flex flex-col justify-center gap-5'>
+      {birthday2 && <div className='adress w-[100%] flex flex-col justify-center gap-5'>
         <label><h1>Birthday:</h1></label>
         <Input type='date' onChange={(e)=>handleChange(e,'birthday')} value={userform.birthday}/>
         </div>}
-      {adress2 && <div className='w-[100%] flex flex-col justify-center gap-5'>
+      {adress2 && <div className='adress w-[100%] flex flex-col justify-center gap-5'>
          <label><h1>Adress: </h1></label>
-         <Input type='text'  onChange={(e)=>handleChange(e,'streetaddress')} value={userform.street_address} placeholder='Street adress'/>
+         <Input  type='text'  onChange={(e)=>handleChange(e,'streetaddress')} value={userform.street_address} placeholder='Street adress'/>
             <Input type='text'  onChange={(e)=>handleChange(e,'city')} value={userform.city} placeholder='City'/>
             <Input type='text'  onChange={(e)=>handleChange(e,'state')} value={userform.state} placeholder='State'/>
             <Input type='text'  onChange={(e)=>handleChange(e,'zip')} value={userform.zip} placeholder='Zip'/>
