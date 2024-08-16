@@ -48,6 +48,8 @@ const Onboarding = () =>{
       
       if(users!=null){
         $('.card0').fadeOut();
+        $('.card1').fadeOut();
+        $('.card15').fadeOut();
         setTimeout(()=>{
             $('.card2').fadeIn();
             $('.card2').css('display','flex');
