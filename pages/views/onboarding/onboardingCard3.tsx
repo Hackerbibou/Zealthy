@@ -95,7 +95,7 @@ const onboardingCard3 = ({userform, setForm, aboutme2, birthday2, adress2}:any) 
         </div>}
       {adress2 && <div className='w-[100%] flex flex-col justify-center gap-5'>
          <label><h1>Adress: </h1></label>
-         <Input type='text'  onChange={(e)=>handleChange(e,'streetadress')} value={userform.street_address} placeholder='Street adress'/>
+         <Input type='text'  onChange={(e)=>handleChange(e,'streetaddress')} value={userform.street_address} placeholder='Street adress'/>
             <Input type='text'  onChange={(e)=>handleChange(e,'city')} value={userform.city} placeholder='City'/>
             <Input type='text'  onChange={(e)=>handleChange(e,'state')} value={userform.state} placeholder='State'/>
             <Input type='text'  onChange={(e)=>handleChange(e,'zip')} value={userform.zip} placeholder='Zip'/>
