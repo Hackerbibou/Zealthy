@@ -92,8 +92,8 @@ const Onboarding = () =>{
             <Typography className='titlepara' variant='h5' sx={{color:'grey', fontSize:18}} component='p'>
             Please fill out your information in the following slides.
             </Typography>
-            <Button onClick={nextSlide} sx={{color:'white', backgroundColor:'#6060e2', width:2/5}}>Let's Get Started</Button>
-            <Button onClick={nextSlide1} sx={{color:'white', backgroundColor:'red', width:2/5}}>Resume onboarding</Button>
+            <Button onClick={nextSlide} sx={{color:'white', backgroundColor:'#6060e2', width:'100%'}}>Let's Get Started</Button>
+            <Button onClick={nextSlide1} sx={{color:'white', backgroundColor:'red', width:'100%'}}>Resume onboarding</Button>
             
         </Card>
         <Typography className='logodiv fields' sx={{width:'56%', height:'100%', backgroundColor:'purple',display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>

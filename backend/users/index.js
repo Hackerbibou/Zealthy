@@ -29,6 +29,11 @@ let { data, error } = await supabase.auth.signUp({
   return data
   
 }
+async function logout(){
+
+    let { error } = await supabase.auth.signOut()
+
+}
 async function getUser(){
 
 const { data: { user } } = await supabase.auth.getUser()
@@ -83,5 +88,6 @@ export default{
     login,
     signup,
     getUser,
-    editData
+    editData,
+    logout
 }

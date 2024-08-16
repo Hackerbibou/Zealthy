@@ -76,7 +76,7 @@ const onboardingCard3 = ({userform, setForm, aboutme2, birthday2, adress2}:any) 
             Please continue to fill out your information
         </Typography>
         <Typography sx={{display:'flex', background:'none', justifyContent:'flex-start', alignItems:'center', gap:2}}>
-        <Button onClick={nextSlide} sx={{color:'white', backgroundColor:'#6060e2', width:2/5}}>Save</Button>
+        <Button onClick={nextSlide} sx={{color:'white', backgroundColor:'#6060e2', width:'100%'}}>Save</Button>
         </Typography>
         </Typography>
         <Typography sx={{width:'auto', display:'flex', alignItems:'center', gap:2,backgroundColor:'inherit'}}>

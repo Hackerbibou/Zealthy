@@ -49,7 +49,7 @@ const onboardingCard15 = () =>{
        Resume by entering your email and password
         </Typography>
         <Typography sx={{display:'flex', backgroundColor:'white', justifyContent:'flex-start', alignItems:'center', gap:2}}>
-        <Button onClick={nextSlide} sx={{color:'white', backgroundColor:'#6060e2', width:2/5}}>Save</Button>
+        <Button onClick={nextSlide} sx={{color:'white', backgroundColor:'#6060e2', width:'100%'}}>Save</Button>
         {/* <Button onClick={nextSlide} sx={{color:'#6060e2', backgroundColor:'lightgrey', width:2/5}}>Skip for now</Button> */}
         </Typography>
         </Typography>
