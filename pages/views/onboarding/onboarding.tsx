@@ -1,5 +1,5 @@
 'use client'
-import {Card, Box, Typography, Button, Input } from '@mui/material';
+import {Card, Box, Typography, Button } from '@mui/material';
 import Card1 from './onboardingCard1';
 import Card15 from './onboardingCard15';
 import Card2 from './onboardingCard2';
@@ -33,8 +33,8 @@ const Onboarding = () =>{
 
   });
   const [adminSettings, setSettings]=useState({
-    about_me1:true,
-    about_me2:false,
+    aboutme1:true,
+    aboutme2:false,
     adress1:false,
     adress2:true,
     birthday1:true,
@@ -100,8 +100,8 @@ const Onboarding = () =>{
     </Card>
     <Card1/>
     <Card15/>
-    <Card2 userform={userform} setForm={setForm} adminSettings={adminSettings}/>
-    <Card3 userform={userform} setForm={setForm} adminSettings={adminSettings}/>
+    <Card2 userform={userform} setForm={setForm} aboutme1={adminSettings.aboutme1} birthday1={adminSettings.birthday1} adress1={adminSettings.adress1}/>
+    <Card3 userform={userform} setForm={setForm}  aboutme2={adminSettings.aboutme2} birthday2={adminSettings.birthday2} adress2={adminSettings.adress2}/>
     <Card4/>
   
   </Box>

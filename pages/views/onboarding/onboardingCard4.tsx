@@ -1,17 +1,12 @@
 'use client'
 import {Card, Box, Typography, Link, Button } from '@mui/material';
 import CheckCircleRoundedIcon from '@mui/icons-material/CheckCircleRounded';
-// import Confetti from 'react-confetti';
-// import Confeti from '../../../public/assets/images/icegif.gif';
-import Image from 'next/image';
-
-// import Logo from '../../../public/assets/images/fulllogo.svg'
 const onboardingCard4 = () => {
 
 return (
 <Card className='card4' sx={{width:'85%', height:'80%', backgroundColor:'#dce8ef', justifyContent:'flex-start', alignItems:'center', borderRadius:4, boxShadow:'0px 0px 25px 3px rgb(0 0 0 / 25%)'}}>
     <Card sx={{width:'44%', height:'100%', backgroundColor:'white', borderRadius: 2, padding:6, display:'flex', flexDirection:'column'}}>
-    {/* <Image src={Logo} className='onboardingLogo'  alt=''/> */}
+   
         <Typography sx={{display:'flex', flexDirection:'column', height:'100%', justifyContent:'center', align:'center', gap:3}}>
             <Typography variant='h2' sx={{color:'purple'}} component='h2'>
                 04
@@ -34,14 +29,10 @@ return (
         </Typography>
     </Card>
     <Box sx={{width:'56%', height:'100%', backgroundColor:'inherit', display:'flex', justifyContent:'center', alignItems:'center'}}>
-    {/* <Confetti
-     height={100}
-     width={100}
-    /> */}
+    
     <Box sx={{position:'relative', background:'none'}}>
 
     
-    {/* <Image src={Confeti} className='confeti' alt=''/> */}
         <CheckCircleRoundedIcon
         className='check'
             sx={{

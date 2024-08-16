@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react'
 import utils from '../../../backend/admin'
 export default function adminView() {
   const [userSettings,setSettings]=useState({
-    about_me1:false,
-    about_me2:false,
+    aboutme1:false,
+    aboutme2:false,
     adress1:false,
     adress2:false,
     birthday1:false,
@@ -30,7 +30,7 @@ export default function adminView() {
       <div className='w-[45%] h-[100%] bg-[white] flex flex-col  items-center'>
         <h1 className='my-20 text-[30px]'>Page 2</h1>
         <ul className='flex flex-col gap-8'>
-          <li className='text-[25px] flex items-center gap-3'><input type='checkbox' className='w-5 h-5' onClick={()=>setSettings({...userSettings,about_me1:!userSettings.about_me1})} checked={userSettings.about_me1}  disabled={userSettings.about_me2}/>About Me</li>
+          <li className='text-[25px] flex items-center gap-3'><input type='checkbox' className='w-5 h-5' onClick={()=>setSettings({...userSettings,aboutme1:!userSettings.aboutme1})} checked={userSettings.aboutme1}  disabled={userSettings.aboutme2}/>About Me</li>
           <li className='text-[25px] flex items-center gap-3'><input type='checkbox' className='w-5 h-5' onClick={()=>setSettings({...userSettings,adress1:!userSettings.adress1})} checked={userSettings.adress1} disabled={userSettings.adress2}/>Address</li>
           <li className='text-[25px] flex items-center gap-3'><input type='checkbox' className='w-5 h-5'  onClick={()=>setSettings({...userSettings,birthday1:!userSettings.birthday1})}checked={userSettings.birthday1} disabled={userSettings.birthday2}/>Birthday</li>
         </ul>
@@ -39,7 +39,7 @@ export default function adminView() {
       <div className='w-[45%] h-[100%] bg-[#905f90]  text-white flex flex-col  items-center'>
         <h1 className='my-20 text-[30px]'>Page 3</h1>
         <ul className='flex flex-col gap-8'>
-        <li className='text-[25px] flex items-center gap-3'><input type='checkbox' className='w-5 h-5' onClick={()=>setSettings({...userSettings,about_me2:!userSettings.about_me2})} checked={userSettings.about_me2} disabled={userSettings.about_me1}/>About Me</li>
+        <li className='text-[25px] flex items-center gap-3'><input type='checkbox' className='w-5 h-5' onClick={()=>setSettings({...userSettings,aboutme2:!userSettings.aboutme2})} checked={userSettings.aboutme2} disabled={userSettings.aboutme1}/>About Me</li>
           <li className='text-[25px] flex items-center gap-3'><input type='checkbox' className='w-5 h-5' onClick={()=>setSettings({...userSettings,adress2:!userSettings.adress2})} checked={userSettings.adress2} disabled={userSettings.adress1}/>Address</li>
           <li className='text-[25px] flex items-center gap-3'><input type='checkbox' className='w-5 h-5' onClick={()=>setSettings({...userSettings,birthday2:!userSettings.birthday2})} checked={userSettings.birthday2} disabled={userSettings.birthday1}/>Birthday</li>
         </ul>

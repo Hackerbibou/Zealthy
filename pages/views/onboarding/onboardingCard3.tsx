@@ -5,7 +5,7 @@ import utils from '../../../backend/users';
 // import Logo from '../../../public/assets/images/fulllogo.svg'
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-const onboardingCard3 = ({userform, setForm,adminSettings}:any) =>{
+const onboardingCard3 = ({userform, setForm, aboutme2, birthday2, adress2}:any) =>{
   
     
     useEffect(()=>{
@@ -85,15 +85,15 @@ const onboardingCard3 = ({userform, setForm,adminSettings}:any) =>{
     </Card>
     <Box sx={{display:'flex', justifyContent:'center', flexDirection:'column', background:'none', alignItems:'center', width:'56%', height:'100%'}}>
     <Box sx={{backgroundColor:'purple',display:'flex',width:'70%', flexDirection:'column', justifyContent:'center', gap:5}} >
-    {adminSettings.about_me2 && <div className='w-[100%] flex flex-col justify-center gap-5'>
+    {aboutme2 && <div className='w-[100%] flex flex-col justify-center gap-5'>
         <label><h1>About Me: </h1></label>
           <Input type='text' onChange={(e)=>handleChange(e,'aboutme')} value={userform.about_me} placeholder='Tell us about yourself'/>
         </div>}
-      {adminSettings.birthday2 && <div className='w-[100%] flex flex-col justify-center gap-5'>
+      {birthday2 && <div className='w-[100%] flex flex-col justify-center gap-5'>
         <label><h1>Birthday:</h1></label>
         <Input type='date' onChange={(e)=>handleChange(e,'birthday')} value={userform.birthday}/>
         </div>}
-      {adminSettings.adress2 && <div className='w-[100%] flex flex-col justify-center gap-5'>
+      {adress2 && <div className='w-[100%] flex flex-col justify-center gap-5'>
          <label><h1>Adress: </h1></label>
          <Input type='text'  onChange={(e)=>handleChange(e,'streetadress')} value={userform.street_address} placeholder='Street adress'/>
             <Input type='text'  onChange={(e)=>handleChange(e,'city')} value={userform.city} placeholder='City'/>

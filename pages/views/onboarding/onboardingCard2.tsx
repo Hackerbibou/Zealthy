@@ -6,7 +6,7 @@ import $ from 'jquery';
 import utils from '../../../backend/users'
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-const onboardingCard2 = ({userform,setForm,adminSettings}:any) => {
+const onboardingCard2 = ({userform,setForm, aboutme1, birthday1, adress1}:any) => {
 
   
   useEffect(()=>{
@@ -82,15 +82,15 @@ const onboardingCard2 = ({userform,setForm,adminSettings}:any) => {
     </Card>
     <Box sx={{width:'56%', height:'100%', backgroundColor:'inherit', display:'flex',justifyContent:'center', alignItems:'center'}}>
     <Box sx={{backgroundColor:'purple',display:'flex',width:'70%', flexDirection:'column', justifyContent:'center', gap:5}} >
-      {adminSettings.about_me1 && <div className='w-[100%] flex flex-col justify-center gap-5'>
+      {aboutme1 && <div className='w-[100%] flex flex-col justify-center gap-5'>
         <label><h1>About Me: </h1></label>
         <Input type='text' onChange={(e)=>handleChange(e,'aboutme')} value={userform.about_me} placeholder='Tell us about yourself'/>
         </div>}
-      {adminSettings.birthday1 &&<div className='w-[100%] flex flex-col justify-center gap-5'>
+      {birthday1 &&<div className='w-[100%] flex flex-col justify-center gap-5'>
         <label><h1>Birthday:</h1></label>
         <Input type='date' onChange={(e)=>handleChange(e,'birthday')} value={userform.birthday}/>
         </div>}
-      {adminSettings.adress1 &&<div className='w-[100%] flex flex-col justify-center gap-5'>
+      {adress1 &&<div className='w-[100%] flex flex-col justify-center gap-5'>
          <label><h1>Adress: </h1></label>
             <Input type='text'  onChange={(e)=>handleChange(e,'streetaddress')} value={userform.street_address} placeholder='Street adress'/>
             <Input type='text'  onChange={(e)=>handleChange(e,'city')} value={userform.city} placeholder='City'/>

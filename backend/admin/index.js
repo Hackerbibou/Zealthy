@@ -5,8 +5,8 @@ async function editAdmin(settings){
 
     const { data, error } = await supabase
     .from('adminsettings')
-    .update({ about_me1:settings.about_me1, 
-        about_me2:settings.about_me2, 
+    .update({ aboutme1:settings.aboutme1, 
+        aboutme2:settings.aboutme2, 
         adress1:settings.adress1, 
         adress2:settings.adress2, 
         birthday1:settings.birthday1, 
