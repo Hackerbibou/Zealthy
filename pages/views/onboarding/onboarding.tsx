@@ -103,8 +103,8 @@ const Onboarding = () =>{
     </Card>
     <Card1/>
     <Card15/>
-    <Card2 userform={userform} setForm={setForm} aboutme1={adminSettings.aboutme1} birthday1={adminSettings.birthday1} adress1={adminSettings.adress1}/>
-    <Card3 userform={userform} setForm={setForm}  aboutme2={adminSettings.aboutme2} birthday2={adminSettings.birthday2} adress2={adminSettings.adress2}/>
+    <Card2 userform={userform} about_me={userform.about_me} birthday={userform.birthday} street_address={userform.street_address} state={userform.state} city= {userform.city} zip={userform.zip} setForm={setForm} aboutme1={adminSettings.aboutme1} birthday1={adminSettings.birthday1} adress1={adminSettings.adress1}/>
+    <Card3 userform={userform} about_me={userform.about_me} birthday={userform.birthday} street_address={userform.street_address} state={userform.state} city= {userform.city} zip={userform.zip} setForm={setForm}  aboutme2={adminSettings.aboutme2} birthday2={adminSettings.birthday2} adress2={adminSettings.adress2}/>
     <Card4/>
   
   </Box>

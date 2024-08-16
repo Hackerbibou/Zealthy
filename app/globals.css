@@ -285,6 +285,7 @@ html[dir='rtl'] .apexcharts-tooltip .apexcharts-tooltip-marker {
   width: 80%;
   height: 40%;
   padding: 30px;
+  gap: 20px;
  }
  .logodiv{
   background-color: inherit;

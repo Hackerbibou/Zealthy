@@ -65,7 +65,7 @@ const onboardingCard15 = () =>{
           <label>Email </label>
           <Input type='email' onChange={(e)=>handleChange(e,'email')} value={user.email} placeholder='Enter email here'/>
           <label>Password</label> 
-          <Input type='password' onChange={(e)=>handleChange(e,'password')} value={user.password} placeholder='Create new password here'/>
+          <Input type='password' onChange={(e)=>handleChange(e,'password')} value={user.password} placeholder='Enter password here'/>
          
           </Box >
     </Box>

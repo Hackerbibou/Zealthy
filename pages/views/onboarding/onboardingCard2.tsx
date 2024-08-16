@@ -6,7 +6,12 @@ import $ from 'jquery';
 import utils from '../../../backend/users'
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-const onboardingCard2 = ({userform,setForm, aboutme1, birthday1, adress1}:any) => {
+const onboardingCard2 = ({userform,about_me,
+  birthday,
+  street_address,
+  city,
+  state,
+  zip,setForm, aboutme1, birthday1, adress1}:any) => {
 
   
   useEffect(()=>{
@@ -45,12 +50,7 @@ const onboardingCard2 = ({userform,setForm, aboutme1, birthday1, adress1}:any) =
   }
     function nextSlide(e:any){
         e.preventDefault();
-        console.log(aboutme1)
-        console.log(adress1)
-        console.log(birthday1)
-        console.log(userform)
-        console.log(userform.birthday)
-        if((aboutme1==true && (userform.about_me==''||userform.about_me==undefined))||(adress1==true && (userform.street_address==undefined||userform.city==undefined|| userform.city==''||userform.state==''||userform.state==undefined||userform.zip==undefined||userform.zip==''))||(birthday1==true && userform.birthday==undefined)){
+        if((aboutme1==true && (about_me==''||about_me==undefined))||(adress1==true && (street_address==undefined||city==undefined|| city==''||state==''||state==undefined||zip==undefined||zip==''))||(birthday1==true && birthday==undefined)||(!aboutme1 && !adress1 && !birthday1 && (about_me==''||about_me==undefined))){
           alert('Please fill out all fields')
         }else{
           (async()=>{
@@ -92,20 +92,24 @@ const onboardingCard2 = ({userform,setForm, aboutme1, birthday1, adress1}:any) =
     </Card>
     <Box className='fields' sx={{width:'56%', height:'100%', backgroundColor:'inherit', display:'flex',justifyContent:'center', alignItems:'center'}}>
     <Box className='inputfields' sx={{backgroundColor:'purple',display:'flex',width:'70%', flexDirection:'column', justifyContent:'center', gap:5}} >
+      {!aboutme1 && !birthday1 && !adress1 && <div className='adress w-[100%] flex flex-col justify-center gap-5'>
+        <label><h1>About Me: </h1></label>
+        <Input type='text' onChange={(e)=>handleChange(e,'aboutme')} value={about_me} placeholder='Tell us about yourself'/>
+        </div>}
       {aboutme1 && <div className='adress w-[100%] flex flex-col justify-center gap-5'>
         <label><h1>About Me: </h1></label>
-        <Input type='text' onChange={(e)=>handleChange(e,'aboutme')} value={userform.about_me} placeholder='Tell us about yourself'/>
+        <Input type='text' onChange={(e)=>handleChange(e,'aboutme')} value={about_me} placeholder='Tell us about yourself'/>
         </div>}
-      {birthday1 &&<div className='adress w-[100%] flex flex-col justify-center gap-5'>
+      {birthday1 && <div className='adress w-[100%] flex flex-col justify-center gap-5'>
         <label><h1>Birthday:</h1></label>
-        <Input type='date' onChange={(e)=>handleChange(e,'birthday')} value={userform.birthday}/>
+        <Input type='date' onChange={(e)=>handleChange(e,'birthday')} value={birthday}/>
         </div>}
       {adress1 &&<div className='adress w-[100%] flex flex-col justify-center gap-5'>
          <label><h1>Adress: </h1></label>
-            <Input type='text'  onChange={(e)=>handleChange(e,'streetaddress')} value={userform.street_address} placeholder='Street adress'/>
-            <Input type='text'  onChange={(e)=>handleChange(e,'city')} value={userform.city} placeholder='City'/>
-            <Input type='text'  onChange={(e)=>handleChange(e,'state')} value={userform.state} placeholder='State'/>
-            <Input type='text'  onChange={(e)=>handleChange(e,'zip')} value={userform.zip} placeholder='Zip'/>
+            <Input type='text'  onChange={(e)=>handleChange(e,'streetaddress')} value={street_address} placeholder='Street adress'/>
+            <Input type='text'  onChange={(e)=>handleChange(e,'city')} value={city} placeholder='City'/>
+            <Input type='text'  onChange={(e)=>handleChange(e,'state')} value={state} placeholder='State'/>
+            <Input type='text'  onChange={(e)=>handleChange(e,'zip')} value={zip} placeholder='Zip'/>
         </div>}
          
             
