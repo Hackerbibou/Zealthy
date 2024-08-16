@@ -22,7 +22,7 @@ export default function adminView() {
     (async ()=>{
       const a = await utils.editAdmin(userSettings)
     })();
-    window.location.href='/data'
+    window.location.href='/admin'
   }
   return (
     <form onSubmit={handleSubmit} className='bg-[#e8f2f5]  text-black w-screen h-screen flex flex-col items-center justify-center p-10 gap-8' >
