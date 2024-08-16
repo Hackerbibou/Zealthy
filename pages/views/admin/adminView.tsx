@@ -20,9 +20,12 @@ export default function adminView() {
   function handleSubmit(e:any){
     e.preventDefault();
     (async ()=>{
-      const a = await utils.editAdmin(userSettings)
+      await utils.editAdmin(userSettings)
     })();
-    window.location.href='/admin'
+    setTimeout(()=>{
+    window.location.href='/admin'  
+    },100)
+    
   }
   return (
     <form onSubmit={handleSubmit} className='bg-[#e8f2f5]  text-black w-screen h-screen flex flex-col items-center justify-center p-10 gap-8' >
