@@ -18,9 +18,10 @@ export default function adminView() {
     })()
   },[])
   function handleSubmit(e:any){
+    e.preventDefault();
     (async ()=>{
       const a = await utils.editAdmin(userSettings)
-    })()
+    })();
     window.location.href='/data'
   }
   return (
